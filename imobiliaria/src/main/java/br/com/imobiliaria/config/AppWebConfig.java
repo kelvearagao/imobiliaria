@@ -26,11 +26,11 @@ import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 import org.thymeleaf.templateresolver.TemplateResolver;
 
-import br.com.imobiliaria.controller.ImoveisConroller;
+import br.com.imobiliaria.controller.ImoveisController;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackageClasses = { ImoveisConroller.class })
+@ComponentScan(basePackageClasses = { ImoveisController.class })
 public class AppWebConfig extends WebMvcConfigurerAdapter {
 	
 	@Bean
@@ -68,12 +68,12 @@ public class AppWebConfig extends WebMvcConfigurerAdapter {
 		return new FixedLocaleResolver(new Locale("pt", "BR"));
 	}
 
-	/*
 	@Override
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
 		configurer.enable();
 	}
 	
+	/*	
 	@Bean
 	public FormattingConversionService mvcConversionService() {
 		DefaultFormattingConversionService conversionService = new DefaultFormattingConversionService(true);

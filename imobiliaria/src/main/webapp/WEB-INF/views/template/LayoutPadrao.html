@@ -8,14 +8,17 @@
     
     <title>Sistema Imobiliário</title>
     
+    <!-- Bootstrap -->
     <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
     
+    <!-- CSS personalizado -->
     <link rel="stylesheet" type="text/css" th:href="@{/resources/css/imobiliaria.css}"/>
 
 </head>
 <body>
 
+	<!-- Menu -->
     <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -26,10 +29,12 @@
         </div>
     </nav>
     
+    <!-- Conteúdo -->
     <section layout:fragment="conteudo">
       <p>Conteudo principal</p>
     </section>
     
+    <!-- JavaScripts -->
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script th:src="@{/resources/js/jquery.maskMoney.min.js}"/>
