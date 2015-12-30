@@ -1,5 +1,6 @@
 package br.com.imobiliaria.config;
 
+import java.math.BigDecimal;
 import java.util.Locale;
 
 import nz.net.ultraq.thymeleaf.LayoutDialect;
@@ -73,7 +74,6 @@ public class AppWebConfig extends WebMvcConfigurerAdapter {
 		configurer.enable();
 	}
 	
-	/*	
 	@Bean
 	public FormattingConversionService mvcConversionService() {
 		DefaultFormattingConversionService conversionService = new DefaultFormattingConversionService(true);
@@ -82,7 +82,7 @@ public class AppWebConfig extends WebMvcConfigurerAdapter {
 
 		return conversionService;
 	}
-	
+		
 	@Bean
 	public MessageSource messageSource() {
 		ReloadableResourceBundleMessageSource bundle = new ReloadableResourceBundleMessageSource();
@@ -103,5 +103,4 @@ public class AppWebConfig extends WebMvcConfigurerAdapter {
 	public Validator getValidator() {
 		return validator();
 	}
-	*/
 }
